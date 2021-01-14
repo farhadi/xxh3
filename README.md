@@ -1,13 +1,11 @@
 # XXH3
 
+[![CI build status](https://github.com/farhadi/xxh3/workflows/CI/badge.svg)](https://github.com/farhadi/xxh3/actions?query=workflow%3ACI)
 [![Hex docs](http://img.shields.io/badge/hex.pm-docs-green.svg?style=flat)](https://hexdocs.pm/xxh3)
 [![Hex Version](http://img.shields.io/hexpm/v/xxh3.svg?style=flat)](https://hex.pm/packages/xxh3)
 [![License](http://img.shields.io/hexpm/l/xxh3.svg?style=flat)](https://github.com/farhadi/xxh3/blob/master/LICENSE)
 
 Erlang NIF bindings for XXH3 hash functions implemented in Rust.
-
-**Note:** It uses an experimental implementation of XXH3. I will update
-it once the stable implementation is landed in underlying rust library.
 
 ## Introduction
 

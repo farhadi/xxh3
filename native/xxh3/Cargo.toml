@@ -11,4 +11,4 @@ crate-type = ["dylib"]
 
 [dependencies]
 rustler = "0.22.0-rc.0"
-twox-hash = "1.6.0"
+xxhash-rust = { git = "https://github.com/farhadi/xxhash-rust.git", features = ["xxh3"] }
