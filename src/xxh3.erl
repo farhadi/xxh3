@@ -1,7 +1,7 @@
 %%%-------------------------------------------------------------------
 %% @doc NIF bindings for XXH3 hash functions implemented in Rust
 %%
-%% XXH3 is a new speed-optimized hash algorithm of The xxHash family
+%% XXH3 is a new speed-optimized hash algorithm of the xxHash family
 %% of non-cryptographic hash functions, featuring:
 %% <ul>
 %% <li>Improved speed for both small and large inputs</li>
