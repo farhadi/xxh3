@@ -1,11 +1,14 @@
 %%%-------------------------------------------------------------------
 %% @doc NIF bindings for XXH3 hash functions implemented in Rust
 %%
-%% XXH3 is a recent hash algorithm featuring:
-%%  - Improved speed for both small and large inputs
-%%  - True 64-bit and 128-bit outputs
-%%  - SIMD acceleration
-%%  - Improved 32-bit viability
+%% XXH3 is a new speed-optimized hash algorithm of The xxHash family
+%% of non-cryptographic hash functions, featuring:
+%% <ul>
+%% <li>Improved speed for both small and large inputs</li>
+%% <li>True 64-bit and 128-bit outputs</li>
+%% <li>SIMD acceleration</li>
+%% <li>Improved 32-bit viability</li>
+%% </ul>
 %%
 %% Speed analysis methodology is explained here:
 %%

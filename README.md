@@ -7,7 +7,9 @@ it once the stable implementation is landed in underlying rust library.
 
 ## Introduction
 
-XXH3 is a recent hash algorithm featuring:
+XXH3 is a new speed-optimized hash algorithm of The [xxHash](https://cyan4973.github.io/xxHash/)
+family of non-cryptographic hash functions, featuring:
+
   - Improved speed for both small and large inputs
   - True 64-bit and 128-bit outputs
   - SIMD acceleration
