@@ -10,5 +10,14 @@
     {modules, []},
 
     {licenses, ["Apache 2.0"]},
-    {links, [{"Github", "https://github.com/farhadi/xxh3"}]}
+    {links, [{"Github", "https://github.com/farhadi/xxh3"}]},
+    {files, [
+        "LICENSE",
+        "README.md",
+        "rebar.config",
+        "Cargo.toml",
+        "Cargo.lock",
+        "src",
+        "native"
+    ]}
 ]}.
