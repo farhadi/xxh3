@@ -1,6 +1,6 @@
 {application, xxh3, [
     {description, "NIF bindings for XXH3 hash functions implemented in Rust"},
-    {vsn, "0.1.1"},
+    {vsn, "0.2.0"},
     {registered, []},
     {applications, [
         kernel,
@@ -15,6 +15,7 @@
         "LICENSE",
         "README.md",
         "rebar.config",
+        "rebar.lock",
         "Cargo.toml",
         "Cargo.lock",
         "src",
