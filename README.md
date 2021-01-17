@@ -24,10 +24,9 @@ Speed analysis methodology is explained [here](https://fastcompression.blogspot.
 Erlang nif interface does not support passing bigints to the VM, so for 128-bit variants
 a 128-bit binary is passed, and then converted to a 128-bit integer in erlang.
 
-Erlang wrapper functions are [inlined](https://erlang.org/doc/man/compile.html#inlining) to
-achieve maximum performance.
-
 ## Usage
+Note that only binary data is accepted. For other types of data you can
+first convert them to a binary using `erlang:term_to_binary/1`.
 
 In Erlang
 
@@ -43,6 +42,10 @@ H64WithSecret = xxh3:hash64_with_secret(Data, Secret),
 H128 = xxh3:hash128(Data),
 H128WithSeed = xxh3:hash128(Data, Seed),
 H128WithSecret = xxh3:hash128_with_secret(Data, Secret).
+
+H64Stream = xxh3:new(),
+xxh3:update(H64Stream, Data),
+H64 = xxh3:digest(H64Stream)
 ```
 
 In Elixir
@@ -59,6 +62,10 @@ h64_with_secret = :xxh3.hash64_with_secret(data, secret)
 h128 = :xxh3.hash128(data)
 h128_with_seed = :xxh3.hash128(data, seed)
 h128_with_secret = :xxh3.hash128_with_secret(data, secret)
+
+h64_stream = :xxh3.new(),
+:xxh3.update(h64_stream, data),
+h64 = :xxh3.digest(h64_stream)
 ```
 
 For more details, see the module documentation.
