@@ -11,4 +11,4 @@ crate-type = ["dylib"]
 
 [dependencies]
 rustler = "0.22.0-rc.0"
-xxhash-rust = { version = "0.8.1", features = ["xxh3"] }
+xxhash-rust = { version = "0.8.2", features = ["xxh3"] }
