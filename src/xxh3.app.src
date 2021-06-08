@@ -1,6 +1,6 @@
 {application, xxh3, [
     {description, "NIF bindings for XXH3 hash functions implemented in Rust"},
-    {vsn, "0.3.1"},
+    {vsn, "0.3.2"},
     {registered, []},
     {applications, [
         kernel,
