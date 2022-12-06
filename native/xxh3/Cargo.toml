@@ -1,6 +1,6 @@
 [package]
 name = "xxh3"
-version = "0.3.2"
+version = "0.3.3"
 authors = []
 edition = "2018"
 
@@ -10,5 +10,5 @@ path = "src/lib.rs"
 crate-type = ["dylib"]
 
 [dependencies]
-rustler = "0.22.0-rc.1"
-xxhash-rust = { version = "0.8.2", features = ["xxh3"] }
+rustler = "0.26.0"
+xxhash-rust = { version = "0.8.6", features = ["xxh3"] }
