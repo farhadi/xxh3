@@ -31,7 +31,7 @@
     hash128_with_secret/2
 ]).
 
--include("crates.hrl").
+-include("cargo.hrl").
 
 -opaque xxh3_ref() :: reference().
 
@@ -42,7 +42,7 @@
 -on_load(init/0).
 
 init() ->
-    ?load_nif_from_crate(xxh3, ?crate_xxh3, 0).
+    ?load_nif_from_crate(xxh3, 0).
 
 %% @doc Creates a new 64-bit hasher with default secret.
 %%
