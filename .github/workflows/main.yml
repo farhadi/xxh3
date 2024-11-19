@@ -13,8 +13,8 @@ jobs:
 
     strategy:
       matrix:
-        otp: [21, 22, 23, 24, 25, 26]
-        rust: [1.56.0, stable]
+        otp: [21, 22, 23, 24, 25, 26, 27]
+        rust: [1.75.0, stable, nightly]
 
     container:
       image: erlang:${{matrix.otp}}
